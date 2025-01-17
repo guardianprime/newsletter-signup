@@ -23,7 +23,12 @@
       <div class="img-wrapper">
         <img
           src="./assets/images/illustration-sign-up-mobile.svg"
-          alt="random newsletter image"
+          srcset="
+            ./assets/images/illustration-sign-up-mobile.svg  300w,
+            ./assets/images/illustration-sign-up-desktop.svg 800w
+          "
+          sizes="(max-width: 600px) 300px, 800px"
+          alt="Newsletter sign-up illustration"
         />
       </div>
       <section>
