@@ -166,10 +166,12 @@ button {
 
 /* TEST FOR DIFFERENT MODES */
 
-/* main { display: none; } */
+main {
+  display: none;
+}
 
 .success-message {
-  display: none;
+  /*   display: none; */
   padding: 20px;
   height: 100%;
   position: relative;
@@ -188,4 +190,31 @@ button {
   position: fixed;
   bottom: 40px;
   left: 20px;
+}
+
+/* LARGER SCREENS AND LAPTOPS */
+
+/* smaller laptops */
+@media screen and (min-width: 450px) {
+  .success-message {
+    background-color: white;
+    width: 35%;
+    height: 500px;
+    padding: 50px;
+    border-radius: 20px;
+  }
+
+  .success-message h1 {
+    margin: 20px 0px 25px 0px;
+  }
+
+  .success-message img {
+    margin: 0px;
+  }
+
+  .success-message button {
+    width: 100%;
+    margin-top: 60px;
+    position: static;
+  }
 }
