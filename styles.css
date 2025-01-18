@@ -80,6 +80,21 @@ input {
   padding: 10px 15px;
 }
 
+input.invalid::placeholder {
+  color: red;
+}
+
+.invalid:focus,
+.invalid:hover {
+  border: 3px solid red;
+}
+
+input.invalid {
+  background-color: rgb(255, 198, 198);
+  border: 3px solid red;
+  color: red;
+}
+
 button {
   margin-top: 30px;
   border: none;
@@ -118,6 +133,10 @@ button {
 
   .mobile-img {
     display: none;
+  }
+
+  .laptop-img {
+    display: block;
   }
 
   .img-wrapper img {
