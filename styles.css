@@ -27,6 +27,10 @@ body {
   height: auto;
 }
 
+.laptop-img {
+  display: none;
+}
+
 main section {
   padding: 20px;
 }
@@ -110,6 +114,10 @@ button {
   .img-wrapper {
     width: 45%;
     height: 100%;
+  }
+
+  .mobile-img {
+    display: none;
   }
 
   .img-wrapper img {
