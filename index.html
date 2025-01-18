@@ -19,16 +19,19 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <main>
+    <main id="main">
       <div class="img-wrapper">
         <img
           src="./assets/images/illustration-sign-up-mobile.svg"
           srcset="
-            ./assets/images/illustration-sign-up-mobile.svg  300w,
-            ./assets/images/illustration-sign-up-desktop.svg 800w
+            ./assets/images/illustration-sign-up-mobile.svg  375w,
+            ./assets/images/illustration-sign-up-desktop.svg 400w
           "
-          sizes="(max-width: 600px) 300px, 800px"
+          sizes="(max-width: 600px) 365px, 800px"
           alt="Newsletter sign-up illustration"
+          loading="lazy"
+          width="300"
+          height="300"
         />
       </div>
       <section>
@@ -55,7 +58,7 @@
           </li>
         </ul>
         <!-- Sign-up form start -->
-        <form>
+        <form id="form" novalidate>
           <label for="emailAdd">Email address</label>
           <input type="email" placeholder="email@company.com" id="emailAdd" />
           <button>Subscribe to monthly newsletter</button>
@@ -64,7 +67,7 @@
       </section>
     </main>
     <!-- Success message start -->
-    <section class="success-message">
+    <section class="success-message hide" id="success-message">
       <img src="./assets/images/icon-success.svg" alt="success mark" />
       <h1>Thanks for subscribing!</h1>
       <p>
@@ -72,7 +75,7 @@
         <strong>ash@loremcompany.com</strong>. Please open it and click the
         button inside to confirm your subscription.
       </p>
-      <button>Dismiss message</button>
+      <button id="dismissBtn">Dismiss message</button>
     </section>
 
     <!-- Success message end -->

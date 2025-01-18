@@ -166,12 +166,12 @@ button {
 
 /* TEST FOR DIFFERENT MODES */
 
-main {
+/* used to toggle the success and dissmiss modes */
+.hide {
   display: none;
 }
 
 .success-message {
-  /*   display: none; */
   padding: 20px;
   height: 100%;
   position: relative;
