@@ -63,9 +63,18 @@
         </ul>
         <!-- Sign-up form start -->
         <form id="form" novalidate>
-          <label for="emailAdd">Email address</label>
-          <span class="error-message" id="error-message">void Email Address</span>
-          <input type="email" name="email" placeholder="email@company.com" id="emailAdd" />
+          <div class="form-control">
+            <label for="emailAdd">Email</label>
+            <span class="error-msg hide" id="error-msg"
+              >Please provide a valid email address</span
+            >
+          </div>
+          <input
+            type="email"
+            name="email"
+            placeholder="email@company.com"
+            id="emailAdd"
+          />
           <button>Subscribe to monthly newsletter</button>
         </form>
         <!-- Sign-up form end -->
@@ -77,8 +86,8 @@
       <h1>Thanks for subscribing!</h1>
       <p>
         A confirmation email has been sent to
-        <span id="success-email"><strong>ash@loremcompany.com</strong></span>. Please open it and click the
-        button inside to confirm your subscription.
+        <span id="success-email"></span>. Please open it and
+        click the button inside to confirm your subscription.
       </p>
       <button id="dismissBtn">Dismiss message</button>
     </section>

@@ -95,6 +95,11 @@ input.invalid {
   color: red;
 }
 
+.form-control {
+  display: flex;
+  justify-content: space-between;
+}
+
 button {
   margin-top: 30px;
   border: none;
@@ -217,6 +222,15 @@ button {
   position: fixed;
   bottom: 40px;
   left: 20px;
+}
+
+.error-msg {
+  color: red;
+  margin-left: 40px;
+}
+
+#success-email {
+  font-weight: 600;
 }
 
 /* LARGER SCREENS AND LAPTOPS */
