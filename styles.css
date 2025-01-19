@@ -109,6 +109,11 @@ button {
   font-size: 1.1rem;
 }
 
+button:hover {
+  background: linear-gradient(90deg, rgba(255,110,110,1) 0%, rgba(233,54,54,1) 35%, rgba(210,63,0,1) 100%);
+  cursor: pointer;
+}
+
 /* DESKTOP AND LAPTOP STYLES */
 
 @media screen and (min-width: 480px) {
